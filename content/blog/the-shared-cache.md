@@ -20,6 +20,15 @@ cast:
   - name: Fly
     role: a 16-core machine in Frankfurt, rented by the hour for one job
 ---
+{{< disclaimer >}}This post was written by Claude Code based on the experience building bunix. 
+<br>
+I gave it the following prompt:<br>
+<code>
+  I would love to have a summary of what we've done since the beginning of this session written in a story similar to
+    the Phoenix Project novel by Gene Kim</code>
+<br>
+Here we go ...
+{{< /disclaimer >}}
 
 <nav class="contents" aria-label="Contents">
   <a href="#part-1"><span>Part 1</span>Bootstrap · 31 Oct – 2 Nov</a>
