@@ -1,0 +1,6 @@
+{{/* Opens a part of a long post like a title page: {{< part id="part-1" kicker="Part one" title="Bootstrap" >}}dates{{< /part >}} */}}
+<div class="part" id="{{ .Get "id" }}">
+  <span class="kicker">{{ .Get "kicker" }}</span>
+  <h2>{{ .Get "title" }}</h2>
+  <p>{{ .Inner | .Page.RenderString }}</p>
+</div>

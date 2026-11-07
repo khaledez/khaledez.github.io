@@ -1,0 +1,13 @@
+{{ define "main" }}
+<main class="book">
+  <header class="cover">
+    <h1>{{ site.Title }}</h1>
+    <p class="links">
+      <a href="/blog/">Writing</a>
+      <a href="{{ site.Params.github }}">GitHub</a>
+      <a href="/index.xml">RSS</a>
+    </p>
+  </header>
+  {{ partial "post-list.html" (where site.RegularPages "Section" "blog") }}
+</main>
+{{ end }}

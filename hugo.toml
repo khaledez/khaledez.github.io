@@ -1,0 +1,23 @@
+baseURL = "https://khaledez.net/"
+locale = "en"
+disableKinds = ["taxonomy", "term"]
+title = "Khaled Ezzughayyar"
+
+[params]
+  description = "Writing by Khaled Ezzughayyar."
+  github = "https://github.com/khaledez"
+
+[permalinks]
+  [permalinks.page]
+    blog = "/blog/:slug/"
+
+[markup.goldmark.renderer]
+  # Posts mix Markdown with a little inline HTML (quotes of what was said, tables)
+  unsafe = true
+
+[markup.goldmark.parser.attribute]
+  block = true
+
+[outputs]
+  home = ["html", "rss"]
+  section = ["html", "rss"]

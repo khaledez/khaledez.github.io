@@ -1,0 +1,8 @@
+{{ define "main" }}
+<main class="book">
+  <header class="cover">
+    <h1>{{ .Title }}</h1>
+  </header>
+  {{ partial "post-list.html" .Pages }}
+</main>
+{{ end }}

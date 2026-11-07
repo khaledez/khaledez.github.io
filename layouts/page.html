@@ -1,0 +1,17 @@
+{{ define "main" }}
+<main class="book">
+  <article class="post">
+    <header class="cover">
+      <span class="kicker">{{ with .Params.kicker }}{{ . }} · {{ end }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time></span>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="sub">{{ . }}</p>{{ end }}
+      {{ with .Params.cast }}
+      <div class="cast">
+        {{ range . }}<span><b>{{ .name }}</b> · {{ .role }}</span>{{ end }}
+      </div>
+      {{ end }}
+    </header>
+    {{ .Content }}
+  </article>
+</main>
+{{ end }}
